@@ -4,7 +4,7 @@ function generateLocks() {
   const lock = document.createElement('div'),
         position = generatePosition();
   lock.innerHTML = '<div class="top"></div><div class="bottom"></div>';
-  lock.style.top = position[0];
+  lock.style.top  = position[0];
   lock.style.left = position[1];
   lock.classList = 'lock'// generated';
   document.body.appendChild(lock);
