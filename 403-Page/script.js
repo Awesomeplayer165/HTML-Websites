@@ -1,4 +1,4 @@
-const interval = 200;
+const interval = 600;
 
 function generateLocks() {
   const lock = document.createElement('div'),
