@@ -8,6 +8,9 @@ function checkForm() {
 	birthdate.style = `border-color: ${(!(birthdate.value)) ? "red" : "clear"}`
 
 	if (firstname.value && lastname.value && birthdate.value) {
-		window.location.replace("/iFrame.html")
+		console.log("Redirecting to iFrame.html")
+		window.location.href = "/iFrame.html";
+	} else {
+		console.log("Failed checks")
 	}
 }
