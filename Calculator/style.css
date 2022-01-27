@@ -1,0 +1,15 @@
+body {
+    background-color: darksalmon;
+}
+
+h1 {
+    color: blue;
+}
+
+ul, li, p, h1, h2, h3, h4, h5, h6, a, span {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+input {
+    padding: 10px;
+}
