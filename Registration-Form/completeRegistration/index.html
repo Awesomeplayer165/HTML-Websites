@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Registration Form | Complete Registration</title>
+    <link href="/Registration-Form/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <center><h1>Complete Registration</h1></center>
+      
+      <div style="text-align: center;" aria-hidden="true">
+        <h3>Apply for a tour around our campus</h3>
+        <img src="/Registration-Form/Stratford_School_Campus.jpg" width="300" height="200" style="padding: 10px;"><br>
+
+        <form action="/Registration-Form/ThankYou/"
+
+          <input type="text" id="username" placeholder="Enter Username"><br>
+          <input type="text" id="email"    placeholder="Enter Email"><br>
+          
+          <h3>First name:</h3>
+          <input type="text" name="firstname"  id="firstname"  required><br>
+          <h3>Last name:</h3>
+          <input type="text" name="lastname"   id = "lastname" required><br>
+          <h3>Birth Date:</h3>
+          <input type="date" name="birth-date" id="birth-date" required><br>
+          <h3>Gender</h3>
+          <select name="Gender" id="gender">
+            <option value="choose">Choose a Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+            <option value="preferNotToSay">Prefer Not to Say</option>
+          </select><br>
+
+          <h3>How is your day going?</h3>
+          
+          <input type="radio" id="great" value="Great" name="mood">
+          <label for="great">It's going GREAT</label><br>
+          <input type="radio" id="good" value="Good" name="mood">
+          <label for="good">It's going GOOD</label><br>
+          <input type="radio" id="alright" value="Alright" name="mood">
+          <label for="alright">It's going ALRIGHT</label><br>
+          <input type="radio" id="bad" value="Bad" name="mood">
+          <label for="bad">It's going BAD</label><br>
+          <input type="radio" id="horrible" value="Horrible" name="mood">
+          <label for="horrible">It's going HORRIBLE</label><br><br>
+          
+          <input type="submit" name="Submit" onclick="checkForm()" value="Submit" required><br>
+        </form>
+
+      </div>
+        
+      <script src="script.js"></script>
+  </body>
+</html>

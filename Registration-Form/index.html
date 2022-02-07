@@ -3,11 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Calculator</title>
+    <title>Registration Form</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="/fav.png" type="image/x-icon">
+    <!-- <link rel="icon" href="/fav.png" type="image/x-icon"> -->
   </head>
-  <body>
+  <body></body>
+    <script src="script.js"></script>
 
+    <center><h1>Registration Form</h1></center>
+
+    <center><div>
+      <img src="/Registration-Form/StratfordSchool.png" alt="Stratford School Logo" length="300" width="300"></div>
+      <h2 style="padding: 10px">Welcome to the Stratford Parent Community Site</h3>
+
+      <br>
+      <form action="/Registration-Form/completeRegistration/">
+        <input type="text"   name="username" placeholder="Enter Username" id="username" required><br>
+        <input type="email"  name="email" placeholder="Enter Email"    id="email"    required><br><br>
+        <input type="submit" value="Continue Registration" onclick="startRegistration()">
+      </form>
+
+    </div></center>
   </body>
 </html>
