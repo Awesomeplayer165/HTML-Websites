@@ -3,6 +3,11 @@ function myFunction() {
 }
 
 function toggleBulbState() {
-    const bulb = document.getElementById("bulb")
-    bulb.src = (bulb.getAttribute("src") == "bulbOn.png") ? "bulbOff.png" : "bulbOn.png"
+    if (bulb.getAttribute("src") == "bulbOn.png") {
+        document.getElementById("bulb").src = "bulbOff.png"
+        document.getElementById("status").innerHTML = "OFF"
+    } else {
+        document.getElementById("bulb").src = "bulbOn.png"
+        document.getElementById("status").innerHTML = "ON"
+    }
 }
