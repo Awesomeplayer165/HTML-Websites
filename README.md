@@ -7,6 +7,11 @@ A place for all of my HTML, CSS, and JS Websites worked on as part of my Advance
 - Class Schedule
 - Forms Practice
 - Practice From Slides
+- Calculator
+- Frames, Video, Audio, and External CSS Practice
+- JavaScript Practice
+- Registration Form
+- Recipe Page
 - Error 404 Page: Not Found
 - Error 403 Page: Access Forbidden
 
