@@ -1,5 +1,5 @@
 function myFunction() {
-    document.getElementById("demo").innerHTML = "JavaScript can make this light bulb glow"
+    document.getElementById("demo").innerHTML = "JavaScript can make this light bulb glow."
 }
 
 function toggleBulbState() {
