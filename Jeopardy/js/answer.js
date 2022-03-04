@@ -33,6 +33,18 @@ const urlParam = new URLSearchParams(window.location.search)
 var s = urlParam.get("s")
 var p = urlParam.get("p")
 
+// Current URL: https://my-website.com/page_a
+
+const nextURL = `${window.location.origin}/Jeopardy/Question/`
+const nextTitle = 'Jeopardy | Question'
+const nextState = { additionalInformation: 'Updated the URL with JS' }
+
+// This will create a new entry in the browser's history, without reloading
+window.history.pushState(nextState, nextTitle, nextURL)
+
+// This will replace the current entry in the browser's history, without reloading
+window.history.replaceState(nextState, nextTitle, nextURL)
+
 if ((!p && !localStorage.getItem("p")) && (!s && !localStorage.getItem("s"))) {
 	var message = "Unknown Subject and Points. Go back to the Jeopardy Home Page."
 	console.log(message)
@@ -56,20 +68,9 @@ if ((!p && !localStorage.getItem("p")) && (!s && !localStorage.getItem("s"))) {
 	
 	localStorage.setItem("s", s)
 	localStorage.setItem("p", p)
-	
-	// Current URL: https://my-website.com/page_a
-	const nextURL = 'https://code.awesomeplayer.tech:8080/Jeopardy/Question/';
-	const nextTitle = 'Jeopardy | Question'
-	const nextState = { additionalInformation: 'Updated the URL with JS' }
-	
-	// This will create a new entry in the browser's history, without reloading
-	window.history.pushState(nextState, nextTitle, nextURL)
-	
-	// This will replace the current entry in the browser's history, without reloading
-	window.history.replaceState(nextState, nextTitle, nextURL)
 
 	window.addEventListener('popstate', function(event) {
-		window.location.assign("http://code.awesomeplayer.tech:8080/Jeopardy");
+		window.location.assign(`https://${window.location.origin}/Jeopardy/`);
 	});
 }
 

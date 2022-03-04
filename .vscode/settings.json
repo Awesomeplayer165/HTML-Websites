@@ -1,6 +1,5 @@
 {
     "liveServer.settings.port": 8095,
     "liveServer.settings.multiRootWorkspaceName": "HTML-Websites",
-    "git.terminalAuthentication": false,
-    "fiveServer.
+    "git.terminalAuthentication": false
 }
