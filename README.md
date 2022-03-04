@@ -12,6 +12,7 @@ A place for all of my HTML, CSS, and JS Websites worked on as part of my Advance
 - [JavaScript Practice](JavaScript-Practice)
 - [Registration Form](Registration-Form)
 - [Recipe Page](Recipe-Page)
+- [Jeopardy](Jeopardy) - Currently finished Part 1 and 2 and working on Part 3
 - [Error 404 Page: Not Found](404-Page)
 - [Error 403 Page: Access Forbidden](403-Page)
 
