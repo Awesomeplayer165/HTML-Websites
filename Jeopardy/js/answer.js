@@ -70,7 +70,7 @@ if ((!p && !localStorage.getItem("p")) && (!s && !localStorage.getItem("s"))) {
 	localStorage.setItem("p", p)
 
 	window.addEventListener('popstate', function(event) {
-		window.location.assign(`https://${window.location.origin}/Jeopardy/`);
+		window.location.assign(`${window.location.origin}/Jeopardy/`);
 	});
 }
 
