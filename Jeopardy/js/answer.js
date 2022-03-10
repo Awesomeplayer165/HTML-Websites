@@ -1,10 +1,10 @@
 var dict = {
 	"0": {
 		"subjectName": "Integrated Language Arts",
-		"100": ["Test Question 0.1", "Test Answer 0.1"],
-		"200": ["Test Question 0.2", "Test Answer 0.2"],
-		"300": ["Test Question 0.3", "Test Answer 0.3"],
-		"400": ["Test Question 0.4", "Test Answer 0.4"]
+		"100": ["What does a sentence do?", "What does it tell what someone or something do"],
+		"200": ["What is a a question with a sentence ending with a question", "What is an interrogative question?"],
+		"300": ["Samantha, I can’t eat or sleep when you are gone. I need to hear your scratchy voice and see your lovely toothless smile. I miss that special way that you eat soup with your fingers. Please come home soon! What is the main idea of this paragraph? ", "What is Samantha, I miss you"],
+		"400": ["Someday we will all have robots that will be our personal servants. They will look and behave much like real humans. We will be able to talk to these mechanical helpers and they will be able to respond in kind. Amazingly, the robots of the future will be able to learn from experience. They will be smart, strong, and untiring workers whose only goal will be to make our lives easier. What sentence from the paragraph expresses the main idea? ", "What is someday we will all have robots that will be our personal servants."]
 	},
 	"1": {
 		"subjectName": "Maths",
@@ -72,6 +72,8 @@ if ((!p && !localStorage.getItem("p")) && (!s && !localStorage.getItem("s"))) {
 	window.addEventListener('popstate', function(event) {
 		window.location.assign(`${window.location.origin}/Jeopardy/`);
 	});
+
+	localStorage.setItem("currentPointValue", p)
 }
 
 function showAnswer() {

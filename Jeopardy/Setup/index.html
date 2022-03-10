@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jeopardy | Setup</title>
+    <link href="../css/inputtext.css" rel="stylesheet" type="text/css" />
+    <link href="../css/linkhover.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body style="padding: 100px;">
+
+    <div class="link-wrapper">
+      <a href="../" class="link hover-1" style="color: blue">Go Back</a>
+    </div>
+
+    <br>
+    <br>
+      <h1>Setup</h1>
+      <br><br>
+
+      
+      <br><label class="input">
+        <input class="input__field" type="text" placeholder=" " id="Team.One.Set"/>
+        <span class="input__label">Team One Name</span>
+      </label><br>
+
+      <br><label class="input">
+        <input class="input__field" type="text" placeholder=" " id="Team.Two.Set"/>
+        <span class="input__label">Team Two Name</span>
+      </label><br>
+
+      <br><label class="input">
+        <input class="input__field" type="text" placeholder=" " id="Team.Three.Set"/>
+        <span class="input__label">Team Three Name</span>
+      </label><br>
+      
+      <br>
+      <br>
+
+      <input type="button" onclick="finishSetup()" value="Finish Setup">
+      
+      <p id="test"></p>
+
+      <script src="../js/setup.js"></script>
+
+  </body>
+</html>

@@ -6,9 +6,11 @@
     <title>Jeopardy | Home</title>
     <link href="https://assets.cdn.awesomeplayer.tech/hPmIIEzkASLcRfGCIGHe/roboto.min.css" rel="stylesheet" type="text/css" />	
     <!-- <link href="css/hover" rel="stylesheet" type="text/css" /> -->
+    <link href="css/linkhover.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body></body>
+  <body>
+    <button onclick="reset()">Reset</button>
       <center>
           <img src="https://assets.cdn.awesomeplayer.tech/img/images/Jeopardy_2k_HeroLogo-4x3.jpg" alt="Jeopardy Image" width=490 height="270">
           <br><br><br>
@@ -23,37 +25,35 @@
 
             <!-- 100 -->
             <tr>
-              <td align="center"><input type="submit" value="100" onclick="submit(0, 100)"></td>
-              <td align="center"><input type="submit" value="100" onclick="submit(1, 100)"></td>
-              <td align="center"><input type="submit" value="100" onclick="submit(2, 100)"></td>
-              <td align="center"><input type="submit" value="100" onclick="submit(3, 100)"></td>
+              <td align="center"><input id="0,100" type="submit" value="100" onclick="submit(0, 100)"></td>
+              <td align="center"><input id="1,100" type="submit" value="100" onclick="submit(1, 100)"></td>
+              <td align="center"><input id="2,100" type="submit" value="100" onclick="submit(2, 100)"></td>
+              <td align="center"><input id="3,100" type="submit" value="100" onclick="submit(3, 100)"></td>
             </tr>
 
             <!-- 200 -->
             <tr>
-              <td align="center"><input type="submit" value="200" onclick="submit(0, 200)"></td>
-              <td align="center"><input type="submit" value="200" onclick="submit(1, 200)"></td>
-              <td align="center"><input type="submit" value="200" onclick="submit(2, 200)"></td>
-              <td align="center"><input type="submit" value="200" onclick="submit(3, 200)"></td>
+              <td align="center"><input id="0,200" type="submit" value="200" onclick="submit(0, 200)"></td>
+              <td align="center"><input id="1,200" type="submit" value="200" onclick="submit(1, 200)"></td>
+              <td align="center"><input id="2,200" type="submit" value="200" onclick="submit(2, 200)"></td>
+              <td align="center"><input id="3,200" type="submit" value="200" onclick="submit(3, 200)"></td>
             </tr>
 
             <!-- 300 -->
             <tr>
-              <td align="center"><input type="submit" value="300" onclick="submit(0, 300)"></td>
-              <td align="center"><input type="submit" value="300" onclick="submit(1, 300)"></td>
-              <td align="center"><input type="submit" value="300" onclick="submit(2, 300)"></td>
-              <td align="center"><input type="submit" value="300" onclick="submit(3, 300)"></td>
+              <td align="center"><input id="0,300" type="submit" value="300" onclick="submit(0, 300)"></td>
+              <td align="center"><input id="1,300" type="submit" value="300" onclick="submit(1, 300)"></td>
+              <td align="center"><input id="2,300" type="submit" value="300" onclick="submit(2, 300)"></td>
+              <td align="center"><input id="3,300" type="submit" value="300" onclick="submit(3, 300)"></td>
             </tr>
 
             <!-- 400 -->
             <tr>
-              <td align="center"><input type="submit" value="400" onclick="submit(0, 400)"></td>
-              <td align="center"><input type="submit" value="400" onclick="submit(1, 400)"></td>
-              <td align="center"><input type="submit" value="400" onclick="submit(2, 400)"></td>
-              <td align="center"><input type="submit" value="400" onclick="submit(3, 400)"></td>
+              <td align="center"><input id="0,400" type="submit" value="400" onclick="submit(0, 400)"></td>
+              <td align="center"><input id="1,400" type="submit" value="400" onclick="submit(1, 400)"></td>
+              <td align="center"><input id="2,400" type="submit" value="400" onclick="submit(2, 400)"></td>
+              <td align="center"><input id="3,400" type="submit" value="400" onclick="submit(3, 400)"></td>
             </tr>
-
-
 
           </table>
 
@@ -61,7 +61,49 @@
 
       <br><br>
 
-      <a href="https://awesomeplayer.tech" target="_self">About Me</a>
+      <center>
+        <table>
+          <tr>
+            <td>
+              <table border="2" cellpadding="5">
+                <tr>
+                    <th colspan="3" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><b>Scoreboard</b></th>
+                </tr>
+    
+                <!-- Name -->
+                <tr>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;"><p id="Team.Name.One"  >Name: </p></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;"><p id="Team.Name.Two"  >Name: </p></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 10px; padding-bottom: 10px;"><p id="Team.Name.Three">Name: </p></td>
+                </tr>
+    
+                <!-- Current Points -->
+                <tr>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><p id="Team.Points.1">Points: 0</p></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><p id="Team.Points.2">Points: 0</p></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><p id="Team.Points.3">Points: 0</p></td>
+                </tr>
+    
+                <!-- Add Points -->
+                <tr>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><input type="submit" value="Add Points" onclick="addPoints(1)"></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><input type="submit" value="Add Points" onclick="addPoints(2)"></td>
+                  <td align="center" style="padding-left: 50px; padding-right: 50px; padding-top: 20px; padding-bottom: 20px;"><input type="submit" value="Add Points" onclick="addPoints(3)"></td>
+                </tr>
+    
+              </table>
+            </td>
+            <td>
+
+              <iframe id="DisplayQuestion" width="543" height="286.4"></iframe>
+            </td>
+      </center>
+
+      <div>
+        <div class="link-wrapper">
+          <a href="https://awesomeplayer.tech" class="link hover-1" style="color: blue">About Me</a>
+        </div>
+      </div>
 
       <script src="js/script.js"></script>
   </body>

@@ -1,8 +1,8 @@
-* {
+*, input {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: aquamarine;
-    padding: 100px;
+    /* padding: 100px; */
 }
