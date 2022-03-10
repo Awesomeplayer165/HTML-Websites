@@ -11,7 +11,7 @@ var dict = {
 		"100": ["If the events have the same theoretical probability of happening, then they are called?", "What are equally likely events?"],
 		"200": ["Calculate P(3, 2)", "What is 6"],
 		"300": ["What is the symbol which denotes the symmetric difference of sets?", "What is `Δ` (a small triangle glyph)"],
-		"400": ["Let A = {4,5,6,7} and B = {4,5,6,7}If f is one to one from A to B then which of the following is correct?", "What is f may or may not be bijective?"]
+		"400": ["Let A = {4,5,6,7} and B = {4,5,6,7}If f is one to one from A to B then what can be concluded about f's bijective?", "What is f may or may not be bijective?"]
 	},
 	"2": {
 		"subjectName": "Science",
@@ -25,7 +25,7 @@ var dict = {
 		"100": ["Software that is often distributed free of charge and usually intended for sale after a trial period is called", "What is freeware?"],
 		"200": ["The binary number 10101 (read as: one, zero, one, zero, one) is equivalent to what decimal number?", "What is `21`?"],
 		"300": ["The file extension .MID (read as: dot, M, I, D) usually means that the file can be opened by what type of program:", "What are music programs?"],
-		"400": ["In the Windows environment, which of the following file extensions represents a hidden file to replace pages or segments of data in memory:", "What is `.swp`?"]
+		"400": ["In the Windows environment, what mostfile extension represents a hidden file to replace pages or segments of data in memory:", "What is `.swp`?"]
 	}
 }
 
