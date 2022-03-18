@@ -1,0 +1,25 @@
+*, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+.letter {
+    border-radius: 5%;
+    border-color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: 20%;
+    margin: auto;
+}
+
+.grid-item {
+    border: 2px solid darkgray;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
