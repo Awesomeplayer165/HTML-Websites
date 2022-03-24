@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     max-width: 20%;
+    align-content: center;
     margin: auto;
 }
 
