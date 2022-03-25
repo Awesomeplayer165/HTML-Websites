@@ -20,7 +20,7 @@ function addPoints(teamNumber, isStarting = false) {
 			localStorage.setItem(`Team.Points.${teamNumber}`, Number(pointLabel.innerHTML.slice("8") + currentPointValue))
 		}
 	} else {
-		console.log("Nothing to add... No Point Value")
+		
 	}
 }
 
