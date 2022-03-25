@@ -47,7 +47,7 @@ window.history.replaceState(nextState, nextTitle, nextURL)
 
 if ((!p && !localStorage.getItem("p")) && (!s && !localStorage.getItem("s"))) {
 	var message = "Unknown Subject and Points. Go back to the Jeopardy Home Page."
-	console.log(message)
+	
 	alert(message)
 } else {
 	if (!(p && s)) {
