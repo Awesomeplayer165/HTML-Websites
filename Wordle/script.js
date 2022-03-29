@@ -69,6 +69,10 @@ $(document).bind("keydown", function (event) {
                 alert("You Win!")
                 hasWon = true
             }
+
+            if (gridItem[0] == 5) {
+                alert("You Lose!")
+            }
         } else {
             
             document.getElementById(`${gridItem[0]},0`).innerHTML = ""
