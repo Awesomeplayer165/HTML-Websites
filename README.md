@@ -1,3 +1,5 @@
+[![GitHub Pages Deployment](https://github.com/Awesomeplayer165/HTML-Websites/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Awesomeplayer165/HTML-Websites/actions/workflows/pages/pages-build-deployment)
+
 # HTML, CSS, JS Websites
 
 A place for all of my HTML, CSS, and JS Websites worked on as part of my Advanced Computer Science course.
