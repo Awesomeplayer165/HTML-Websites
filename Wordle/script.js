@@ -16,6 +16,14 @@ if (!(localStorage.getItem("alphabet"))) {
 
 var word = (["avant", "hello", "pzazz", "jazzy", "unite", "shows", "parts", "leave"].map(name => name.toUpperCase())).random()
 
+// create grid-item elements
+
+for (var c = 0; c < 5; c++) {
+    for (var r = 0; r < 6; r++) {
+        $(".grid-container").append(`<div class="grid-item" id="${c},${r}"></div>`)
+    }
+}
+
 $.getJSON("words.json", function(data) {
     words = data
 })
