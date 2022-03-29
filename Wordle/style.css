@@ -1,5 +1,6 @@
 *, input {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .letter {
@@ -10,7 +11,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    max-width: 20%;
+    max-width: min-content;
     align-content: center;
     margin: auto;
 }
