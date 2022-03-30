@@ -1,7 +1,14 @@
 var gridItem = [0, 0]
+var hasWon = false
 var words
 
-var hasWon = false
+if (!(localStorage.getItem("words"))) {
+    $.getJSON("words.json", function(data) {
+        localStorage.setItem("words", JSON.stringify(data))
+    })
+} else {
+    words = JSON.parse(localStorage.getItem("words"))
+}
 
 Array.prototype.random = function () {
     return this[Math.floor((Math.random() * this.length))];
@@ -18,15 +25,12 @@ var word = (["avant", "hello", "pzazz", "jazzy", "unite", "shows", "parts", "lea
 
 // create grid-item elements
 
-for (var c = 0; c < 5; c++) {
-    for (var r = 0; r < 6; r++) {
+for (var c = 0; c <= 5; c++) {
+    for (var r = 0; r <= 4; r++) {
+        console.log(c, r)
         $(".grid-container").append(`<div class="grid-item" id="${c},${r}"></div>`)
     }
 }
-
-$.getJSON("words.json", function(data) {
-    words = data
-})
 
 $(document).bind("keydown", function (event) {
     if (hasWon) { return }
@@ -74,21 +78,19 @@ $(document).bind("keydown", function (event) {
             }
 
             if (timesGreen == 5) {
-                alert("You Win!")
+                alert(`You Win! You took ${gridItem[0] + 1} guess${(gridItem[0] > 0 ? "es" : "")} to complete the word ${word}`)
                 hasWon = true
-            }
-
-            if (gridItem[0] == 5) {
+            } else if (gridItem[0] == 5) {
                 alert("You Lose!")
             }
         } else {
-            
+
             document.getElementById(`${gridItem[0]},0`).innerHTML = ""
             document.getElementById(`${gridItem[0]},1`).innerHTML = ""
             document.getElementById(`${gridItem[0]},2`).innerHTML = ""
             document.getElementById(`${gridItem[0]},3`).innerHTML = ""
             document.getElementById(`${gridItem[0]},4`).innerHTML = "" 
-
+            
             gridItem = [gridItem[0] - 1, 0]
 
             alert("Not a word in the bank")
