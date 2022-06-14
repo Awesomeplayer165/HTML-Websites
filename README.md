@@ -15,7 +15,7 @@ A place for all of my HTML, CSS, and JS Websites worked on as part of my Advance
 - [Registration Form](Registration-Form)
 - [Recipe Page](Recipe-Page)
 - [Jeopardy](Jeopardy)
-- [Wordle](Wordle) - Need to add keywords
+- [Wordle](Wordle)
 - [Error 404 Page: Not Found](404-Page)
 - [Error 403 Page: Access Forbidden](403-Page)
 
